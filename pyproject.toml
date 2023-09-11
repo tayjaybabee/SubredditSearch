@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "subreddit-search"
+version = "1.0-dev1"
+description = "Search for subreddits"
+authors = ["Taylor B. <tayjaybabee@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "search_subreddit"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+appdirs = "^1.4.4"
+rapidfuzz = "^3.2.0"
+rich = "^13.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.5"
+prompt-toolkit = "^3.0.39"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
